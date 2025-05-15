@@ -51,6 +51,7 @@
 }
 
 :root {
+  --font-railway: "Raleway", sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -136,4 +137,8 @@
   .hoverEffect {
     @apply transition-all ease-in-out duration-300 cursor-pointer;
   }
+}
+
+body {
+  font-family: var(--font-railway);
 }
