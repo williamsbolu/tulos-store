@@ -15,7 +15,7 @@ import { Trash } from "lucide-react";
 import OrderDetailsDialog from "./OrderDetailsDialog";
 
 const OrdersComponent = ({ orders }: { orders: MY_ORDERS_QUERYResult }) => {
-  const [isDeleting, _setIsDeleting] = useState<string | null>(null);
+  const [isDeleting, setIsDeleting] = useState<string | null>(null);
   const [selectedOrder, setSelectedOrder] = useState<
     MY_ORDERS_QUERYResult[number] | null
   >(null);
@@ -71,6 +71,7 @@ const OrdersComponent = ({ orders }: { orders: MY_ORDERS_QUERYResult }) => {
                     {/* Delete button */}
                     <button
                       // onClick={(e) => handleDeleteOrder(order._id, e)}
+                      onClick={(e) => setIsDeleting(null)}
                       className="ml-2 text-red-500 hover:text-red-700 cursor-pointer transition-colors"
                       // disabled={isDeleting === order._id}
                       aria-label="Delete order"
