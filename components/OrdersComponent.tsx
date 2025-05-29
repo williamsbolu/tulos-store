@@ -71,7 +71,7 @@ const OrdersComponent = ({ orders }: { orders: MY_ORDERS_QUERYResult }) => {
                     {/* Delete button */}
                     <button
                       // onClick={(e) => handleDeleteOrder(order._id, e)}
-                      onClick={(e) => setIsDeleting(null)}
+                      onClick={() => setIsDeleting(null)}
                       className="ml-2 text-red-500 hover:text-red-700 cursor-pointer transition-colors"
                       // disabled={isDeleting === order._id}
                       aria-label="Delete order"
