@@ -1,4 +1,4 @@
-import { TagIcon, TrolleyIcon } from "@sanity/icons";
+import { TrolleyIcon } from "@sanity/icons";
 import { defineType, defineField } from "sanity";
 
 export const productType = defineType({
@@ -54,7 +54,7 @@ export const productType = defineType({
     }),
     defineField({
       name: "discount",
-      title: "Discount Price",
+      title: "Discount Percentage",
       type: "number",
       validation: (Rule) => Rule.required(),
     }),
@@ -103,6 +103,7 @@ export const productType = defineType({
       },
     }),
   ],
+  // Styles how the product would display on the sanity admin dashboard
   preview: {
     select: {
       title: "name",

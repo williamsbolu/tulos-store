@@ -2,12 +2,12 @@ import { cn } from "@/lib/utils";
 
 interface Props {
   children: React.ReactNode;
-  classname?: string;
+  className?: string;
 }
 
-const Container = ({ children, classname }: Props) => {
+const Container = ({ children, className }: Props) => {
   return (
-    <div className={cn("max-w-7xl mx-auto px-4", classname)}>{children}</div>
+    <div className={cn("max-w-7xl mx-auto px-4", className)}>{children}</div>
   );
 };
 

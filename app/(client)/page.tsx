@@ -5,7 +5,7 @@ import ProductGrid from "@/components/ProductGrid";
 export default function Home() {
   return (
     <div>
-      <Container classname="py-10">
+      <Container className="py-10">
         <HomeBanner />
         <ProductGrid />
       </Container>

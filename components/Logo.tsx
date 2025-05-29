@@ -8,7 +8,7 @@ interface Props {
 
 const Logo = ({ children, classname }: Props) => {
   return (
-    <Link href="/">
+    <Link href="/" className="inline-block">
       <h2
         className={cn(
           "text-2xl text-darkColor font-black tracking-wider uppercase",
