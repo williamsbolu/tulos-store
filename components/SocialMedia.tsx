@@ -5,14 +5,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
-import {
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Slack,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Instagram, Linkedin, Slack, Youtube } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Props {

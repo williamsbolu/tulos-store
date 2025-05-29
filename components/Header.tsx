@@ -6,7 +6,7 @@ import HeaderMenu from "./HeaderMenu";
 import MobileMenu from "./MobileMenu";
 import SearchBar from "./SearchBar";
 import CartIcon from "./CartIcon";
-import { auth, currentUser } from "@clerk/nextjs/server";
+import { currentUser } from "@clerk/nextjs/server";
 import { ClerkLoaded, SignedIn, SignInButton, UserButton } from "@clerk/nextjs";
 import { getAllCategories, getMyOrders } from "@/sanity/helpers/queries";
 

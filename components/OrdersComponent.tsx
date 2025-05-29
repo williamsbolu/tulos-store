@@ -15,7 +15,7 @@ import { Trash } from "lucide-react";
 import OrderDetailsDialog from "./OrderDetailsDialog";
 
 const OrdersComponent = ({ orders }: { orders: MY_ORDERS_QUERYResult }) => {
-  const [isDeleting, setIsDeleting] = useState<string | null>(null);
+  const [isDeleting, _setIsDeleting] = useState<string | null>(null);
   const [selectedOrder, setSelectedOrder] = useState<
     MY_ORDERS_QUERYResult[number] | null
   >(null);
